@@ -8,7 +8,7 @@ class Article extends Component {
   constructor (props) {
     // Send what it gets to its parent object
     super (props);
-    // Creating a super
+    // Creating a super, info is pushed back to component.
   }
 
   render () {
@@ -17,13 +17,13 @@ class Article extends Component {
     return `
       <Article>
         ${this.props.title}
-        
+    
         <span>${this.props.author}</span>
         
         <div>${this.props.text}</div>
 
       </Article>`
-    
+    // displays title, author and text assign in index.js
   }
 
 }
