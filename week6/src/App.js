@@ -4,7 +4,6 @@ import Example from './components/Example/index';
 
 function App() {
   return (
-    <Example/>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <Example/>
       </header>
     </div>
   );
