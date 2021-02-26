@@ -1,7 +1,7 @@
 
 import './App.css';
 import Laps from './components/Laps';
-import SitUps from './components/Situps';
+import Situps from './components/Situps';
 
 function App() {
   return (

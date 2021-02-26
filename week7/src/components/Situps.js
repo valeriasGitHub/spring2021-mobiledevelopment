@@ -1,20 +1,14 @@
-import React, {Component} from 'react'
+import React, {useState} from 'react'
 
-class Situps extends Component {
-    constructor(props) {
-        super(props);
-        this.state= {
-            sitUps: 0
-        }
-    }
+function Situps () {
+    const [sitUps, setsitUps] = useState (0);
 
-render(){
-    return(
+    return (
         <div>
-            <h2>Sit-ups: {this.state.sitUps}</h2>
-            
+            <h2>Sit ups:{sitUps}</h2>
+            <button onClick={()=> setsitUps(sitUps+1)}>+ 1 Sit up</button>
+            <button onClick={()=> setsitUps(0)}>Reset Counter</button>
         </div>
     )
-}
 }
 export default Situps;

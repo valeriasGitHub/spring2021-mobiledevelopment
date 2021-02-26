@@ -13,6 +13,7 @@ render(){
         <div>
             <h2>Run laps: {this.state.Runlaps}</h2>
             <button onClick={()=>this.setState({Runlaps: this.state.Runlaps + 1})}>+1 lap</button>
+            <button onClick={()=>this.setState({Runlaps: 0})}>Reset Counter</button>
         </div>
     )
 }
