@@ -1,14 +1,14 @@
 
 import './App.css';
-import laps from './components/laps';
-import sitUps from './components/sit-ups';
+import Laps from './components/Laps';
+import SitUps from './components/Situps';
 
 function App() {
   return (
     <div>
       <h1>Exercise Tracker:</h1>
-      <laps/>
-      <sitUps/>
+      <Laps/>
+      <Situps/>
     </div>
     
   );
